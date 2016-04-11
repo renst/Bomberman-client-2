@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Bomberman/Graphics.c" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/Bomberman/Graphics.h" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/Bomberman/Game.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/Bomberman/Game.h" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/Bomberman/LevelManager.h" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/Bomberman/inputHandler.h" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/Bomberman/level/levels/Level1.h" charset="ISO-8859-1" />

@@ -18,8 +18,6 @@
 
 #include <SDL_render.h>
 
-#include "LevelStruct.h"
-
 
 int InitLevel1(SDL_Renderer *renderer);
 

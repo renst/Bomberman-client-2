@@ -1,4 +1,4 @@
-#include "Graphics.h"
+#include "Game.h"
 
 //Definition av "GameLoop" headern
 
@@ -16,6 +16,7 @@ int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 			{
 				running = false;
 			}
+            else if(event.type = SDL_KEYDOWN)
 		}
 		//Rensa render
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);

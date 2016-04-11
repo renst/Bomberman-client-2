@@ -11,6 +11,3 @@ int InitLevel1(SDL_Renderer *renderer) {
 
     return 0;
 }
-
-
-

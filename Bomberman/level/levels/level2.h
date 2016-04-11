@@ -9,8 +9,6 @@
 
 #include <SDL_render.h>
 
-#include "LevelStruct.h"
-
 int InitLevel2(SDL_Renderer *renderer);
 
 #endif //CLIENT_LEVEL2_H
