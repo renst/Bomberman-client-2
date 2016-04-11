@@ -11,7 +11,7 @@ int DrawLevel(SDL_Renderer *renderer) {
     SDL_RenderFillRect(renderer, &rect);
     return 0;
 }
-
+//Hej
 int Draw() {
     printf("hej");
     return 0;
