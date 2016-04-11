@@ -16,4 +16,10 @@
 
 #include "GameLevel.h"
 
+#include <SDL_render.h>
+
+int DrawLevel(SDL_Renderer *renderer);
+
+int Draw();
+
 #endif // LEVEL_1_H

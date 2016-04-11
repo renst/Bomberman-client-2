@@ -16,5 +16,8 @@
 #define GAME_CONTROLLER_H
 
 #include "GameLevel.h"
+#include <Level1.h>
+
+int LevelInit(int level);
 
 #endif //GAME_CONTROLLER_H

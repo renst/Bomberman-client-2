@@ -2,19 +2,12 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <MacTypes.h>
 //Definition av "Graphics" headern
 
-Graphics() {
-	const int width = 800;
-	const int height = 600;
 
-	SDL_Init(SDL_INIT_VIDEO);
 
-	SDL_Window *window = SDL_CreateWindow("Test", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, width, height, SDL_WINDOW_OPENGL);  //Man rendrar till detta fönster
-
-	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-
-	
+int Graphics(SDL_Window *window, SDL_Renderer *renderer) {
 	//Det här ska normal inte ligga här utan i en annan funktion som "render()" jag bara testar lite SDL funtioner
 	bool running = true;
 	SDL_Event event;
@@ -48,3 +41,31 @@ Graphics() {
 	return 0;
 
 }
+
+SDL_Window * InitWindow(int w, int h, char *title) {
+
+	SDL_Init(SDL_INIT_EVERYTHING);
+
+	SDL_Window *window = SDL_CreateWindow(
+			title,
+			SDL_WINDOWPOS_UNDEFINED,
+			SDL_WINDOWPOS_UNDEFINED,
+			w,
+			h,
+			SDL_WINDOW_OPENGL);
+
+	return window;
+}
+
+SDL_Renderer * InitRenderer(SDL_Window *window) {
+
+	SDL_Init(SDL_INIT_EVERYTHING);
+
+	SDL_Renderer *renderer = SDL_CreateRenderer(
+			window,
+			-1,
+			SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+
+	return renderer;
+}
+

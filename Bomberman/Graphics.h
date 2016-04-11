@@ -7,6 +7,13 @@
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 
-Graphics();
+#include <SDL_render.h>
+#include <SDL.h>
+
+int Graphics(SDL_Window *window, SDL_Renderer *renderer);
+
+SDL_Window * InitWindow(int w, int h, char *title);
+
+SDL_Renderer * InitRenderer(SDL_Window *window);
 
 #endif // GRAPHICS_H
