@@ -1,7 +1,7 @@
 
 #include "Graphics.h"
 #include <SDL.h>
-#include "Level1.h"
+#include "level/levels/Level1.h"
 #include "LevelManager.h"
 #include <stdio.h>
 
@@ -15,12 +15,18 @@ int main(int argc, char **argv)
 
 	window = InitWindow(400,400,"hej");
 
-	//Graphics();
+	//GameLoop();
 	SDL_Renderer *renderer;
 
 	renderer = InitRenderer(window);
 
-	Graphics(window, renderer);
+	//LevelInit(window, renderer);
+
+
+
+    GameLoop(window, renderer);
+
+	//GameLoop(window, renderer);
 
 	// Init alla funktioner
 

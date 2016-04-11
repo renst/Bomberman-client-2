@@ -11,15 +11,16 @@
 
 // Update() -> Vad som ska ske i leveln defenieras i update, ska något röra sig osv
 
-#ifndef LEVEL_1_H
-#define LEVEL_1_H
+#ifndef LEVEL1_H
+#define LEVEL1_H
 
-#include "GameLevel.h"
+#include "../../GameLevel.h"
 
 #include <SDL_render.h>
 
-int DrawLevel(SDL_Renderer *renderer);
+#include "LevelStruct.h"
 
-int Draw();
 
-#endif // LEVEL_1_H
+int InitLevel1(SDL_Renderer *renderer);
+
+#endif

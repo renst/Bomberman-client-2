@@ -16,8 +16,13 @@
 #define GAME_CONTROLLER_H
 
 #include "GameLevel.h"
-#include <Level1.h>
+#include "level/levels/Level1.h"
+#include "level/levels/Level2.h"
+#include <SDL_video.h>
+#include <SDL_render.h>
 
-int LevelInit(int level);
+int LevelInit(SDL_Renderer *renderer);
+
+void LevelManage(SDL_Renderer *renderer,int levelSelect);
 
 #endif //GAME_CONTROLLER_H

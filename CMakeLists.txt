@@ -19,6 +19,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
 file(GLOB BOMBERMAN_SRC
      Bomberman/*.h
      Bomberman/*.c
+
+     Bomberman/level/levels/*.h
+     Bomberman/level/levels/*.c
      )
 
 set(SOURCE_FILES ${BOMBERMAN_SRC})

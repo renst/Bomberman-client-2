@@ -24,7 +24,7 @@
     <ClCompile Include="Level1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameController.c">
+    <ClCompile Include="LevelManager.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="inputHandler.c">
@@ -38,13 +38,13 @@
     <ClInclude Include="GameLevel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameController.h">
+    <ClInclude Include="LevelManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Level1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
+    <ClInclude Include="GameLoop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inputHandler.h">

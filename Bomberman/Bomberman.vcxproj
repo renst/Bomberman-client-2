@@ -125,7 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameController.c" />
+    <ClCompile Include="LevelManager.c" />
     <ClCompile Include="Graphics.c" />
     <ClCompile Include="inputHandler.c" />
     <ClCompile Include="Level1.c" />
@@ -133,9 +133,9 @@
     <ClCompile Include="Player.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameController.h" />
+    <ClInclude Include="LevelManager.h" />
     <ClInclude Include="GameLevel.h" />
-    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="GameLoop.h" />
     <ClInclude Include="inputHandler.h" />
     <ClInclude Include="Level1.h" />
     <ClInclude Include="Player.h" />

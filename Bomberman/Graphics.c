@@ -1,13 +1,10 @@
 #include "Graphics.h"
-#include <SDL.h>
-#include <stdio.h>
-#include <stdbool.h>
-#include <MacTypes.h>
-//Definition av "Graphics" headern
+
+//Definition av "GameLoop" headern
 
 
 
-int Graphics(SDL_Window *window, SDL_Renderer *renderer) {
+int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 	//Det här ska normal inte ligga här utan i en annan funktion som "render()" jag bara testar lite SDL funtioner
 	bool running = true;
 	SDL_Event event;
@@ -24,14 +21,12 @@ int Graphics(SDL_Window *window, SDL_Renderer *renderer) {
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		SDL_RenderClear(renderer);
 
-		//Rita
-
-		//Test med Rect
-		SDL_Rect rect = { 50, 50, 200, 200 };
-		SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-		SDL_RenderFillRect(renderer, &rect);
+        //LevelManage(renderer);
+        LevelManage(renderer, 0);
 
 		//Visa vad som ritas
+        //SDL_UpdateWindowSurface(window);
+
 		SDL_RenderPresent(renderer);
 	}
 
