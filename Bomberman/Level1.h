@@ -1,7 +1,4 @@
-#include "GameLevel.h"
-
-
-//Unik för varje level 
+//Unik för varje level
 //Här använder man gamecontroller för att säga vilken level som är igång
 //Och vi anvönder funktionerna i gameController för att hantera lvln
 
@@ -13,3 +10,10 @@
 // Render() -> Definiera vad som ritas till skärmen, rita leveln
 
 // Update() -> Vad som ska ske i leveln defenieras i update, ska något röra sig osv
+
+#ifndef LEVEL_1_H
+#define LEVEL_1_H
+
+#include "GameLevel.h"
+
+#endif // LEVEL_1_H
