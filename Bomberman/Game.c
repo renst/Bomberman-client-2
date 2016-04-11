@@ -16,7 +16,10 @@ int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 			{
 				running = false;
 			}
-            else if(event.type = SDL_KEYDOWN)
+            else if(event.type == SDL_KEYDOWN)
+            {
+                // What happens if a key is down..
+            }
 		}
 		//Rensa render
 		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
