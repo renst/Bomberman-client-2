@@ -28,7 +28,7 @@ int Graphics(SDL_Window *window, SDL_Renderer *renderer) {
 
 		//Test med Rect
 		SDL_Rect rect = { 50, 50, 200, 200 };
-		SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);	
+		SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
 		SDL_RenderFillRect(renderer, &rect);
 
 		//Visa vad som ritas
@@ -39,7 +39,6 @@ int Graphics(SDL_Window *window, SDL_Renderer *renderer) {
 	SDL_Quit();
 
 	return 0;
-
 }
 
 SDL_Window * InitWindow(int w, int h, char *title) {
