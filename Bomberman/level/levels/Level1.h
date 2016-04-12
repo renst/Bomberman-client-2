@@ -19,6 +19,7 @@
 #include <SDL_render.h>
 
 
+
 int InitLevel1(SDL_Renderer *renderer);
 
 #endif

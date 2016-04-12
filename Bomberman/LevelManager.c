@@ -12,13 +12,16 @@ int LevelInit(SDL_Renderer *renderer){
 
 void LevelManage(SDL_Renderer *renderer, int levelSelect) {
 
-    // Find a better way
-    if(levelSelect == 1){
-        InitLevel1(renderer);
-    }
-    else if(levelSelect == 2){
-        InitLevel2(renderer);
-    }
+    int TotalAmountOfLevels = 2;
+
+    int (*p[TotalAmountOfLevels])(SDL_Renderer *renderer);
+
+    p[0]= InitLevel1;
+    p[1]= InitLevel2;
+
+    (*p[levelSelect])(renderer);
+
+
 }
 
 

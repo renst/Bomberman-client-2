@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
     // Creating a window
 	SDL_Window *window;
-	window = InitWindow(400,400,"hej");
+	window = InitWindow(1280,720,"hej");
 
     // Creating a renderer
 	SDL_Renderer *renderer;
