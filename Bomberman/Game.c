@@ -2,7 +2,7 @@
 #include "Player.h"
 
 //Flytta till inputManager
-bool processEvents(bool *running, Player *player)
+void processEvents(bool *running, Player *player)
 {
 	SDL_Event event;
 	while (SDL_PollEvent(&event))
@@ -12,7 +12,7 @@ bool processEvents(bool *running, Player *player)
 			*running = false;
 		}
 	}
-
+	/*
 	const Uint8 *state = SDL_GetKeyboardState(NULL);
 	if(state[SDL_SCANCODE_A])
 	{
@@ -29,7 +29,9 @@ bool processEvents(bool *running, Player *player)
 	if(state[SDL_SCANCODE_S])
 	{
 		player->y += 2;
-	}
+	}*/
+	const Uint8 *state = SDL_GetKeyboardState(NULL);
+	PlayerWalk(player,state);
 }
 
 //Flytta till renderer

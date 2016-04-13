@@ -10,11 +10,11 @@ typedef struct
 {
     int x;
     int y;
-    int speed;
+    float speed;
     char name[20];
 }Player;
 
-int PlayerWalk(Player *player, SDL_Event event);
+int PlayerWalk(Player *player, Uint8 *state);
 
 Player CreatePlayer(int x, int y);
 

@@ -1,23 +1,22 @@
 #include "Player.h"
 
-int Walk(Player *player, SDL_Event event) {
+int PlayerWalk(Player *player, Uint8 *state) {
 
-    switch(event.key.keysym.sym) {
-        case SDLK_UP:
-            player->y -= 2;
-            break;
-
-        case SDLK_DOWN:
-            player->y += 2;
-            break;
-
-        case SDLK_LEFT:
-            player->x -= 2;
-            break;
-
-        case SDLK_RIGHT:
-            player->x += 2;
-            break;
+    if(state[SDL_SCANCODE_A])
+    {
+        player->x -= 2;
+    }
+    if(state[SDL_SCANCODE_D])
+    {
+        player->x += 2;
+    }
+    if(state[SDL_SCANCODE_W])
+    {
+        player->y -= 2;
+    }
+    if(state[SDL_SCANCODE_S])
+    {
+        player->y += 2;
     }
     return 0;
 }
