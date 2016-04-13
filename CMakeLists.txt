@@ -17,8 +17,17 @@ file(GLOB BOMBERMAN_SRC
      Bomberman/*.c
         Bomberman/*.png
 
+     Bomberman/player/*.h
+     Bomberman/player/*.c
+
+     Bomberman/player/handlers/*.h
+     Bomberman/player/handlers/*.c
+
      Bomberman/level/levels/*.h
      Bomberman/level/levels/*.c
+
+     Bomberman/level/handlers/*.h
+     Bomberman/level/handlers/*.c
 
      Bomberman/graphics/*.h
      Bomberman/graphics/*.c

@@ -7,8 +7,8 @@
 #include "handlers/inputHandler.h"
 #include <stdio.h>
 #include <stdbool.h>
-#include "handlers/LevelHandler.h"
-#include "../Player.h"
+#include "../level/handlers/LevelHandler.h"
+#include "../player/Player.h"
 
 
 

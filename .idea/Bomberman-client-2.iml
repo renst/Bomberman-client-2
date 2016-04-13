@@ -2,6 +2,7 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/Knight.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/GameLevel.h" isTestSource="false" />
@@ -14,12 +15,29 @@
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/Game.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/Graphics.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/Player.c" isTestSource="false" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/player/Player.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/player/handlers/inputHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/player/handlers/inputHandler.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/player/Player.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/handlers/LevelHandler.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/handlers/LevelHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/level2.c" isTestSource="false" />
+>>>>>>> origin/master
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/Level1.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/level2.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/Level1.h" isTestSource="false" />
+<<<<<<< HEAD
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/level2.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/Graphics.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+=======
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/Game.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/Game.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/GameLevel.h" isTestSource="false" />
+>>>>>>> origin/master
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
