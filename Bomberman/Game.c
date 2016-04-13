@@ -1,12 +1,5 @@
 #include "Game.h"
-
-//Definition av "GameLoop" headern
-
-typedef struct
-{
-	int x,y;
-	char *name;
-}Player;
+#include "Player.h"
 
 //Flytta till inputManager
 bool processEvents(bool *running, Player *player)
@@ -14,19 +7,12 @@ bool processEvents(bool *running, Player *player)
 	SDL_Event event;
 	while (SDL_PollEvent(&event))
 	{
-		switch(event.type)
+		if(event.type == SDL_QUIT)
 		{
-			case SDL_QUIT:
-			{
-				*running = false;
-			}break;
-			case SDL_KEYDOWN:
-			{
-
-
-			}
+			*running = false;
 		}
 	}
+
 	const Uint8 *state = SDL_GetKeyboardState(NULL);
 	if(state[SDL_SCANCODE_A])
 	{
@@ -69,12 +55,12 @@ void doRender(SDL_Renderer *renderer, Player *player)
 }
 
 int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
-	//Det här ska normal inte ligga här utan i en annan funktion som "render()" jag bara testar lite SDL funtioner
+
 	bool running = true;
 
-	Player player;
-	player.x = 50;
-	player.y = 50;
+	Player player = CreatePlayer(50, 50);
+	//player.x = 50;
+	//player.y = 50;
 	while (running)
 	{
 		processEvents(&running, &player);

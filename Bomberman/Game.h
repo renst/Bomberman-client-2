@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "LevelManager.h"
+#include "Player.h"
 
 int GameLoop(SDL_Window *window, SDL_Renderer *renderer);
 
