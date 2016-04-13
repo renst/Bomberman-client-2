@@ -4,7 +4,7 @@
 #include <SDL.h>
 #include "SDL_image.h"
 #include "../Graphics.h"
-#include "handlers/inputHandler.h"
+#include "../player/handlers/inputHandler.h"
 #include <stdio.h>
 #include <stdbool.h>
 #include "../level/handlers/LevelHandler.h"

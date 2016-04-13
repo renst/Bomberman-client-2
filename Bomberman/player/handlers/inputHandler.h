@@ -7,8 +7,8 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "LevelHandler.h"
-#include "../../Player.h"
+#include "../../level/handlers/LevelHandler.h"
+#include "../Player.h"
 
 void ProcessEvents(bool *running, Game *game);
 
