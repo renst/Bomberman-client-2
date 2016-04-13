@@ -15,6 +15,7 @@ set("-std=c99")
 file(GLOB BOMBERMAN_SRC
      Bomberman/*.h
      Bomberman/*.c
+        Bomberman/*.png
 
      Bomberman/level/levels/*.h
      Bomberman/level/levels/*.c
@@ -29,6 +30,6 @@ file(GLOB BOMBERMAN_SRC
      Bomberman/game/handlers/*.c
      )
 
-set(SOURCE_FILES ${BOMBERMAN_SRC})
+set(SOURCE_FILES ${BOMBERMAN_SRC} Bomberman/Graphics.c Bomberman/Graphics.h)
 
 add_executable(client ${SOURCE_FILES})

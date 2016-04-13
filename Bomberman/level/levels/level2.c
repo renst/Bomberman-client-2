@@ -6,7 +6,7 @@
 
 int InitLevel2(SDL_Renderer *renderer) {
 
-    SDL_Rect rect = { 50, 50, 200, 200 };
+    SDL_Rect rect = { 300, 500, 50, 50 };
     SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
     SDL_RenderFillRect(renderer, &rect);
 

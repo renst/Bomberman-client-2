@@ -1,54 +1,59 @@
+
 #include "Game.h"
 
-//Flytta till inputManager
-void ProcessEvents(bool *running, Player *player)
-{
-	SDL_Event event;
-	while (SDL_PollEvent(&event))
-	{
-		if(event.type == SDL_QUIT)
-		{
-			*running = false;
+/*
+void shittyCollisionDetection(Game *game){
+	float mw= 10, mh =10;
+	float mx = game->player.x, my = game->player.y;
+	float bx = 300, by =500, bw = 55, bh = 55;
+	if(my+mh > by && my< by+bh){
+		if(mx < bx +bw && mx+mw > bx+bw){
+			game->player.x = bx+bw;
+			mx = bx+mw;
+		}
+		else if(mx+mw > bx && mx < bx){
+			game->player.x = bx-mw;
+			mx = bx-mw;
 		}
 	}
 
-	const Uint8 *state = SDL_GetKeyboardState(NULL);
-	PlayerWalk(player,state);
+	if(mx+mw > bx && mx<bx+bw)
+	{
+		if(my < by +bh && my > by)
+		{
+			game->player.y = by+bh;
+			my = by+bh;
+		}
+		else if(my+mh > by && my < by)
+		{
+			game->player.y = by-mh;
+			my = by-mh;
+
+		}
+	}
 }
+*/
 
-//Flytta till renderer
-void doRender(SDL_Renderer *renderer, Player *player)
-{
-	//Rensa render
-	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-	SDL_RenderClear(renderer);
 
-	LevelManage(renderer, 1);
-
-	SDL_Rect rect = { player->x, player->y, 200, 200 };
-	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-	SDL_RenderFillRect(renderer, &rect);
-
-	//Visa vad som ritas
-	//SDL_UpdateWindowSurface(window);
-	// hej
-
-	SDL_RenderPresent(renderer);
-
-}
 
 int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 
 	bool running = true;
+	SDL_Surface *playerSurface = NULL;
 
-	Player player = CreatePlayer(50, 50);
-	//player.x = 50;
-	//player.y = 50;
+	Game game;
+
+	game.player = CreatePlayer(50,50);
+
 	while (running)
 	{
-		ProcessEvents(&running, &player);
+		ProcessEvents(&running, &game);
 
-		doRender(renderer, &player);
+		doRender(renderer, &game);
+
+
+
+
 
 		//Tar mindre proccesor kraft
 		SDL_Delay(10);
@@ -77,7 +82,7 @@ SDL_Window * InitWindow(int w, int h, char *title) {
 
 SDL_Renderer * InitRenderer(SDL_Window *window) {
 
-	SDL_Init(SDL_INIT_EVERYTHING);
+
 
 	SDL_Renderer *renderer = SDL_CreateRenderer(
 			window,
