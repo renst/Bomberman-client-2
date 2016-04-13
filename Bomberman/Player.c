@@ -1,6 +1,6 @@
 #include "Player.h"
 
-int PlayerWalk(Player *player, Uint8 *state) {
+int PlayerWalk(Player *player,const Uint8 *state) {
 
     if(state[SDL_SCANCODE_A])
     {

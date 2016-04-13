@@ -20,8 +20,6 @@ void LevelManage(SDL_Renderer *renderer, int levelSelect) {
     p[1]= InitLevel2;
 
     (*p[levelSelect])(renderer);
-
-
 }
 
 

@@ -1,5 +1,4 @@
 #include "Game.h"
-#include "../Player.h"
 
 //Flytta till inputManager
 void ProcessEvents(bool *running, Player *player)
@@ -24,9 +23,7 @@ void doRender(SDL_Renderer *renderer, Player *player)
 	SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 	SDL_RenderClear(renderer);
 
-
-	//V�ljer vilken level och ritar den underst av allt;
-	LevelManage(renderer, 0);
+	LevelManage(renderer, 1);
 
 	SDL_Rect rect = { player->x, player->y, 200, 200 };
 	SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);

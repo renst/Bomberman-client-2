@@ -7,6 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/Game.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/Game.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/handlers/inputHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/handlers/LevelHandler.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/handlers/LevelHandler.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bomberman/game/handlers/inputHandler.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/Player.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/level2.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bomberman/level/levels/Level1.c" isTestSource="false" />

@@ -14,7 +14,7 @@ typedef struct
     char name[20];
 }Player;
 
-int PlayerWalk(Player *player, Uint8 *state);
+int PlayerWalk(Player *player,const Uint8 *state);
 
 Player CreatePlayer(int x, int y);
 
