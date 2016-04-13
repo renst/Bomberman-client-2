@@ -31,6 +31,7 @@ void doRender(SDL_Renderer *renderer, Player *player)
 
 	//Visa vad som ritas
 	//SDL_UpdateWindowSurface(window);
+	// hej
 
 	SDL_RenderPresent(renderer);
 
