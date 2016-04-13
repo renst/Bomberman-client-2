@@ -25,7 +25,7 @@ void doRender(SDL_Renderer *renderer, Player *player)
 	SDL_RenderClear(renderer);
 
 
-	//Väljer vilken level och ritar den underst av allt;
+	//Vï¿½ljer vilken level och ritar den underst av allt;
 	LevelManage(renderer, 0);
 
 	SDL_Rect rect = { player->x, player->y, 200, 200 };
@@ -49,7 +49,6 @@ int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 	while (running)
 	{
 		ProcessEvents(&running, &player);
-		//Kalla på renderer och update
 
 		doRender(renderer, &player);
 

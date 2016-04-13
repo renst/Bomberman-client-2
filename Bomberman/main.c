@@ -6,8 +6,6 @@
 #include <stdio.h>
 
 
-//Main loop, kallar på alla andra funktioner, försök att ha så lite i denna som möjligt allt ska vara enkelt att ändra inget hård kodat
-
 
 int main(int argc, char **argv)
 {
@@ -23,19 +21,12 @@ int main(int argc, char **argv)
     // The game loop
     GameLoop(window, renderer);
 
-
-
-
-
-
-
-
 	//GameLoop(window, renderer);
 
 	// Init alla funktioner
 
-	// något i denna stil
-	// loop när spelet inte är slut
+	// nï¿½got i denna stil
+	// loop nï¿½r spelet inte ï¿½r slut
 	// get input
 	// update
 	// draw to buffer
