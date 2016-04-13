@@ -1,8 +1,8 @@
 #include "Game.h"
-#include "Player.h"
+#include "../Player.h"
 
 //Flytta till inputManager
-void processEvents(bool *running, Player *player)
+void ProcessEvents(bool *running, Player *player)
 {
 	SDL_Event event;
 	while (SDL_PollEvent(&event))
@@ -12,24 +12,7 @@ void processEvents(bool *running, Player *player)
 			*running = false;
 		}
 	}
-	/*
-	const Uint8 *state = SDL_GetKeyboardState(NULL);
-	if(state[SDL_SCANCODE_A])
-	{
-		player->x -= 2;
-	}
-	if(state[SDL_SCANCODE_D])
-	{
-		player->x += 2;
-	}
-	if(state[SDL_SCANCODE_W])
-	{
-		player->y -= 2;
-	}
-	if(state[SDL_SCANCODE_S])
-	{
-		player->y += 2;
-	}*/
+
 	const Uint8 *state = SDL_GetKeyboardState(NULL);
 	PlayerWalk(player,state);
 }
@@ -65,7 +48,7 @@ int GameLoop(SDL_Window *window, SDL_Renderer *renderer) {
 	//player.y = 50;
 	while (running)
 	{
-		processEvents(&running, &player);
+		ProcessEvents(&running, &player);
 		//Kalla på renderer och update
 
 		doRender(renderer, &player);

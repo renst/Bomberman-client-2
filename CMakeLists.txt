@@ -19,6 +19,15 @@ file(GLOB BOMBERMAN_SRC
 
      Bomberman/level/levels/*.h
      Bomberman/level/levels/*.c
+
+     Bomberman/graphics/*.h
+     Bomberman/graphics/*.c
+
+     Bomberman/game/*.h
+     Bomberman/game/*.c
+
+     Bomberman/game/handlers*.h
+     Bomberman/game/handlers*.c
      )
 
 set(SOURCE_FILES ${BOMBERMAN_SRC})

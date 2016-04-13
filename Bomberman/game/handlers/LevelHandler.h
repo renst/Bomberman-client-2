@@ -15,9 +15,9 @@
 #ifndef GAME_CONTROLLER_H
 #define GAME_CONTROLLER_H
 
-#include "GameLevel.h"
-#include "level/levels/Level1.h"
-#include "level/levels/level2.h"
+#include "../../GameLevel.h"
+#include "../../level/levels/Level1.h"
+#include "../../level/levels/Level2.h"
 #include <SDL_video.h>
 #include <SDL_render.h>
 

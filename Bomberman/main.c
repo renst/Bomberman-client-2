@@ -1,8 +1,8 @@
 
-#include "Game.h"
+#include "game/Game.h"
 #include <SDL.h>
 #include "level/levels/Level1.h"
-#include "LevelManager.h"
+#include "game/handlers/LevelHandler.h"
 #include <stdio.h>
 
 
