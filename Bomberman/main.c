@@ -2,7 +2,7 @@
 #include "game/Game.h"
 #include <SDL.h>
 #include "level/levels/Level1.h"
-#include "game/handlers/LevelHandler.h"
+#include "level/handlers/LevelHandler.h"
 #include <stdio.h>
 
 

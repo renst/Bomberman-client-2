@@ -4,8 +4,8 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "handlers/LevelHandler.h"
-#include "../Player.h"
+#include "../level/handlers/LevelHandler.h"
+#include "../player/Player.h"
 
 
 int GameLoop(SDL_Window *window, SDL_Renderer *renderer);
