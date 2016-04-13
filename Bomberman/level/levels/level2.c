@@ -2,7 +2,7 @@
 // Created by Timothy Friberg Holmsten on 11/04/16.
 //
 
-#include "Level2.h"
+#include "level2.h"
 
 int InitLevel2(SDL_Renderer *renderer) {
 
